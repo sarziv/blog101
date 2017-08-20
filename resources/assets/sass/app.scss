@@ -1,0 +1,22 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+#flash-message {
+  bottom: 20px;
+  position: absolute;
+  right: 20px;
+  z-index: 10;
+  animation: flash-message 4s forwards;
+}
+
+@keyframes flash-message {
+  0%   {opacity: 1;}
+  100% {opacity: 0; display:none;}
+}
